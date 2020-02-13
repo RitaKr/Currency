@@ -1,0 +1,11 @@
+.amount {
+  border: none;
+}
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+.currency {
+  display: flex;
+  justify-content: space-between;
+}
