@@ -4,10 +4,18 @@
     <meta charset="utf-8" />
     <title>Currency exchange</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
   </head>
   <body>
-    <h1>Exchange Rate Calculator</h1>
     <div class="container">
+      <div class="currency-icon">
+        <i class="fas fa-dollar-sign"></i>
+      </div>
+      <h1 class="currency-title">Exchange Rate Calculator</h1>
       <div class="currency">
         <select id="currency-one">
           <option value="AED">AED</option>
@@ -71,8 +79,10 @@
           value="1"
         />
       </div>
-      <button id="swap">Swap</button>
-      <div id="rate"></div>
+      <div class="currency-value">
+        <button id="swap">Swap</button>
+        <div id="rate"></div>
+      </div>
       <div class="currency">
         <select id="currency-two">
           <option value="AED">AED</option>

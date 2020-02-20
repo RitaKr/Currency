@@ -27,3 +27,9 @@ function calculate() {
       amountTo.value = (amountFrom.value * rateValue).toFixed(2);
     });
 }
+swap.addEventListener("click", () => {
+  let temp = currencyFrom.value;
+  currencyFrom.value = currencyTo.value;
+  currencyTo.value = temp;
+  calculate();
+});
