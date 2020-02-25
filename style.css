@@ -67,3 +67,67 @@ input:focus,
 input:focus {
   color: white;
 }
+
+@media (max-width: 1080px) {
+  * {
+    font-size: 1.4em;
+  }
+  .currency-icon {
+    width: 300px;
+    height: 300px;
+    margin-top: 40px;
+    font-size: 3em;
+  }
+  #swap {
+    padding: 25px 46px;
+    border-radius: 25px;
+  }
+  .currency-title {
+    font-size: 3em;
+  }
+  .currency-value {
+    font-size: 1em;
+  }
+  select:focus {
+    font-size: 1em;
+  }
+  .container {
+    max-width: 90%;
+  }
+  .amount {
+    width: 100%;
+  }
+
+  #currency-one,
+  #currency-two {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 720px) {
+  * {
+    font-size: 1.2em;
+  }
+  .currency-icon {
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+    font-size: 3em;
+  }
+  .currency-title {
+    font-size: 3em;
+  }
+  select:focus {
+    font-size: 1em;
+  }
+  .container {
+    max-width: 90%;
+  }
+  .amount {
+    width: 100%;
+  }
+  #currency-one,
+  #currency-two {
+    margin: 20px;
+  }
+}
