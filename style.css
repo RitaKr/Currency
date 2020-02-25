@@ -6,7 +6,8 @@
 .currency-title {
   text-align: center;
   font-size: 2em;
-  color: #8d5c11;
+  color: #bb7a18;
+  text-shadow: -1px 1px 3px #d3a56050, 0px 0px 13px #d6bd9650;
 }
 .amount {
   border: none;
@@ -21,17 +22,18 @@
   justify-content: space-between;
 }
 .currency-icon {
-  color: #8d5c11;
+  color: #bb7a18;
   font-size: 25px;
   padding: 20px;
   width: 50px;
   height: 50px;
-  border: 2px solid #8d5c11;
+  border: 2px solid #bb7a18;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  box-shadow: -1px 1px 3px #d3a56050, 0px 0px 13px #d6bd9650;
 }
 .currency-value {
   display: flex;
@@ -43,17 +45,25 @@ input,
 .currency-value {
   color: rgba(255, 255, 255, 0.4);
 }
+select {
+  border-color: rgba(255, 255, 255, 0.4);
+}
 #swap {
-  border: 2px solid #263c85;
+  border: none;
   color: #16191b;
   letter-spacing: 2px;
   text-transform: capitalize;
   padding: 10px 18px;
-  background: linear-gradient(to right, rgb(60, 96, 214), #263c85);
+  background: linear-gradient(to right, rgb(60, 96, 214), #2c2685);
   font-weight: 600;
   border-radius: 10px;
   margin: 30px 0;
 }
+select,
+input:focus,
 #swap:focus {
   outline: none;
+}
+input:focus {
+  color: white;
 }
